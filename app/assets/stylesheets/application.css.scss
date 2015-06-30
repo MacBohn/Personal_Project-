@@ -4,17 +4,22 @@
 
 @import "bootstrap";
 
-.navbar     {
+.navbar {
   background-color: blue;
 
-  text-color: white;
+  font-color: white;
 }
 
+.whats{
+  h1{
+    text-align: center;
+  }
+}
 .jumbotron     {
-  background-color: green;
-
-
-
+  background-color: yellow;
+  h1{
+    text-align: center;
+  }
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
