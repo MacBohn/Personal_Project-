@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
-   root "pages#index"
+  root "pages#index"
 
-   get "/whats" => "pages#whats", as: :whats
+  get "/whats" => "pages#whats", as: :whats
+
+  get '/sign-in' => 'authentication#new', as: :signin
+  post '/sign-in' => 'authentication#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
